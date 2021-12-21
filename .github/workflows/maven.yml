@@ -48,7 +48,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           draft: true
-          files: ./fizz-data-mask-plugin-${{ steps.releaseVersion.outputs.substring }}.zip
+          files: ./fizz-plugin-data-mask-${{ steps.releaseVersion.outputs.substring }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish to Apache Maven Central
