@@ -14,7 +14,7 @@ I、gateway项目pom文件中引入以下依赖：
 <dependency>
     <groupId>com.fizzgate</groupId>
     <artifactId>fizz-plugin-data-mask</artifactId>
-    <version>1.0-beta1</version>
+    <version>2.3.4-beta2</version>
 </dependency>
 ```
 
