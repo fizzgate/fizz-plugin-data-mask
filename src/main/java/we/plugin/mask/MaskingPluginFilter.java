@@ -95,7 +95,7 @@ public class MaskingPluginFilter implements FizzPluginFilter {
         ServerHttpResponseDecorator decoratedResponse = new ServerHttpResponseDecorator(originalResponse) {
             @Override
             public Mono<Void> writeWith(Publisher<? extends DataBuffer> body) {
-                if (body instanceof Flux) {
+                if (body instanceof Mono || body instanceof Flux) {
                     Mono<DataBuffer> modifiedBody = NettyDataBufferUtils.join(body)
                             .map(dataBuffer -> {
                                 CharBuffer charBuffer = StandardCharsets.UTF_8.decode(dataBuffer.asByteBuffer());
