@@ -14,10 +14,11 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package we.plugin.mask;
+package com.fizzgate.plugin.mask;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.fizzgate.plugin.mask.rules.MaskingRule;
 import org.reactivestreams.Publisher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,11 +34,10 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import we.plugin.FizzPluginFilter;
-import we.plugin.FizzPluginFilterChain;
-import we.plugin.mask.rules.MaskingRule;
-import we.util.JacksonUtils;
-import we.util.NettyDataBufferUtils;
+import com.fizzgate.plugin.FizzPluginFilter;
+import com.fizzgate.plugin.FizzPluginFilterChain;
+import com.fizzgate.util.JacksonUtils;
+import com.fizzgate.util.NettyDataBufferUtils;
 
 import java.nio.CharBuffer;
 import java.nio.charset.StandardCharsets;

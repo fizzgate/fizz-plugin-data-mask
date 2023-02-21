@@ -14,7 +14,7 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package we.plugin.mask.rules;
+package com.fizzgate.plugin.mask.rules;
 
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;

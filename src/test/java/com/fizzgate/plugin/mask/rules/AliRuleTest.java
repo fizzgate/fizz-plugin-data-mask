@@ -1,4 +1,4 @@
-package we.plugin.mask.rules;
+package com.fizzgate.plugin.mask.rules;
 
 import org.junit.Test;
 /**

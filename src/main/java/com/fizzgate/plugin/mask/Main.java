@@ -1,4 +1,4 @@
-package we.plugin.mask;
+package com.fizzgate.plugin.mask;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -62,8 +62,8 @@ import org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfigurati
 import org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration;
 import org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.reactive.error.ErrorWebFluxAutoConfiguration;
-import we.Fizz;
-import we.FizzAppContext;
+import com.fizzgate.Fizz;
+import com.fizzgate.FizzAppContext;
 
 @SpringBootApplication(
         exclude = {
